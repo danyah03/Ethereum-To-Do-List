@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>📝 ToDo List dApp</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <h1>📝 Ethereum ToDo List</h1>
+
+  <button id="connectBtn">✨ Connect MetaMask</button>
+  <p id="walletStatus">Wallet: ❌ Not connected</p>
+
+  <div id="todoSection">
+    <input type="text" id="taskInput" placeholder="Enter a new task" />
+    <button onclick="addTask()">➕ Add Task</button>
+
+    <h3>Tasks:</h3>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
